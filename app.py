@@ -1,7 +1,7 @@
-from flask import Flask, render_template
+from flask import Flask
+
+from src.api.controllers import AppController, UserController
 
 app = Flask(__name__)
-
-@app.route("/")
-def hello():
-    return render_template("splash.html")
+app.register_blueprint(AppController.blueprint)
+app.register_blueprint(UserController.blueprint)

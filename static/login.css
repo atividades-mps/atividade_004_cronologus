@@ -1,0 +1,25 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  padding: 32px;
+  align-self: flex-start;
+  font-weight: normal;
+}
+
+.signup {
+  padding: 16px;
+  padding-bottom: 40px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
