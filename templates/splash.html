@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cronologus</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='global-styles.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='splash.css') }}">
-</head>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='global-styles.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='splash.css') }}"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="root">
-        <div class="icon">
-            <div class="image"></div>
-            <h1 class="title">Cronologus</h1>
-        </div>
-        <h3 class="author">created by Gabriel Lima</h3>
+      <div class="icon">
+        <div class="image"></div>
+        <h1 class="title">Cronologus</h1>
+      </div>
+      <h3 class="author">created by Gabriel Lima</h3>
     </div>
-</body>
-
+    <script src="{{ url_for('static', filename='js/utils.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/splash.js') }}"></script>
+  </body>
 </html>

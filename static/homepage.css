@@ -1,0 +1,101 @@
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  height: 64px;
+  align-items: center;
+  width: 100%;
+  padding-left: 16px;
+  gap: 32px;
+  border-bottom: 1px solid #00000022;
+}
+
+.header .title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.header .button.menu {
+  width: 36px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .button.change-visualization {
+  width: 64px;
+  height: 100%;
+  font-weight: normal;
+  text-transform: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  gap: 4px;
+}
+
+.header .button.change-visualization .image {
+  --w: 36px;
+  --h: 36px;
+}
+
+.calendar {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #00000077;
+}
+
+.calendar .weekdays {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.calendar .weekday {
+  width: calc(100% / 7);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar .days {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calendar .day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-right: 1px solid #00000055;
+  width: calc(100% / 7);
+  border-bottom: 1px solid #00000055;
+}
+
+.calendar .day .events {
+  flex: 1;
+  width: 100%;
+}
+
+.calendar .day .day-number {
+  padding: 10px 0;
+  font-size: 12px;
+}

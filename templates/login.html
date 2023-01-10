@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cronologus</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='global-styles.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
-</head>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='global-styles.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='login.css') }}"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="root">
-        <h1 class="title">Login</h1>
-        <form class="form">
-            <div class="input-group">
-                <label>Usuário</label>
-                <input type="text" placeholder="Digite seu usuário">
-            </div>
-            <div class="input-group">
-                <label>Senha</label>
-                <input type="password" placeholder="Digite sua senha">
-            </div>
+      <h1 class="title">Login</h1>
+      <form class="form">
+        <div class="input-group">
+          <label>Usuário</label>
+          <input name="name" type="text" placeholder="Digite seu usuário" />
+        </div>
+        <div class="input-group">
+          <label>Senha</label>
+          <input
+            name="password"
+            type="password"
+            placeholder="Digite sua senha"
+          />
+        </div>
 
-            <button class="button button-primary" type="submit">Entrar</button>
-        </form>
+        <button class="button secondary" type="submit">Entrar</button>
+      </form>
 
-        <span class="signup">Não teu uma conta? <a href="/signup">Clique aqui para se cadastrar.</a></span>
+      <span class="signup"
+        >Não teu uma conta?
+        <a href="/signup">Clique aqui para se cadastrar.</a></span
+      >
     </div>
-</body>
-
+    <script src="{{ url_for('static', filename='js/utils.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/login.js') }}"></script>
+  </body>
 </html>
