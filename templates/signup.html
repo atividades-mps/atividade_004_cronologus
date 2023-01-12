@@ -18,18 +18,23 @@
   <body>
     <div class="root">
       <h1 class="title">Cadastre-se</h1>
-      <form class="form">
+      <form action="/signup" method="POST" class="form">
+        <label class="error">{{error}}</label>
         <div class="input-group">
           <label>Usuário</label>
-          <input type="text" placeholder="Digite seu usuário" />
+          <input name="name" type="text" placeholder="Digite seu usuário" />
         </div>
         <div class="input-group">
           <label>E-mail</label>
-          <input type="email" placeholder="Digite seu e-mail" />
+          <input name="email" type="email" placeholder="Digite seu e-mail" />
         </div>
         <div class="input-group">
           <label>Senha</label>
-          <input type="password" placeholder="Digite sua senha" />
+          <input
+            name="password"
+            type="password"
+            placeholder="Digite sua senha"
+          />
         </div>
         <div class="input-group">
           <label>Confirmar senha</label>
@@ -44,5 +49,6 @@
         <a href="/login"> Clique aqui para fazer login.</a></span
       >
     </div>
+    <script src="{{ url_for('static', filename='js/signup.js') }}"></script>
   </body>
 </html>

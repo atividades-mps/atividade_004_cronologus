@@ -18,6 +18,14 @@
   width: 100%;
 }
 
+.form {
+  align-items: center;
+}
+
+.form .error {
+  text-align: center;
+}
+
 .form .button {
   margin-top: 16px;
   align-self: center;

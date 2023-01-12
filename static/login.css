@@ -22,3 +22,7 @@
   margin-top: 16px;
   align-self: center;
 }
+
+.error {
+  font-size: 12px;
+}

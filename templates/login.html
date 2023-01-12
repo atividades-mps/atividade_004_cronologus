@@ -18,7 +18,8 @@
   <body>
     <div class="root">
       <h1 class="title">Login</h1>
-      <form class="form">
+      <form action="/login" method="POST" class="form">
+        <label class="error">{{error}}</label>
         <div class="input-group">
           <label>Usuário</label>
           <input name="name" type="text" placeholder="Digite seu usuário" />
@@ -40,7 +41,5 @@
         <a href="/signup">Clique aqui para se cadastrar.</a></span
       >
     </div>
-    <script src="{{ url_for('static', filename='js/utils.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/login.js') }}"></script>
   </body>
 </html>
